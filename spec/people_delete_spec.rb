@@ -4,7 +4,7 @@ describe "Our Person Delete Route" do
   include SpecHelper
 
   before (:all) do
-    @person = Person.create(first_name: "Miss", last_name: "Piggy", birthdate: DateTime.now - 40.years )
+    @person = Person.create(firstname: "Miss", lastname: "Piggy", birthdate: DateTime.now - 40.years )
   end
   
   after (:all) do
