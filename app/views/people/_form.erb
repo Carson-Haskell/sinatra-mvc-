@@ -1,4 +1,7 @@
-	<label for="firstname">First Name:</label>
+<form action="<%= people_form_action(@person) %>" method="post" id="<%= people_form_id(@person) %>" class="<%= people_form_class(@person) %>">  
+    <input type="hidden" name="_method" value="<%= people_form_method(@person) %>" />
+
+    <label for="firstname">First Name:</label>
 	<input type="text" name="firstname" value="<%= @person.firstname %>" />
 
 	<label for="lastname">Last Name:</label>
@@ -8,3 +11,4 @@
 	<input name="birthdate" type="text" value="<%= @person.birthdate %>"/>
 
 	<input type="submit" />
+</form> 

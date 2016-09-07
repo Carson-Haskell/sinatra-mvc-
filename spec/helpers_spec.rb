@@ -6,7 +6,7 @@ describe 'Our Helper' do
   
   before (:all) do
     @new_person = Person.new
-    @existing_person = Person.create(first_name: "Sample", last_name: "Person", birthdate: (DateTime.now - 25.years))
+    @existing_person = Person.create(firstname: "Sample", lastname: "Person", birthdate: (DateTime.now - 25.years))
   end
   
   after (:all) do
